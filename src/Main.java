@@ -45,7 +45,5 @@ public class Main {
         }
         // Задача 5
         System.out.println("Задача 5");
-
         }
-    }
 }
