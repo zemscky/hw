@@ -18,9 +18,20 @@ public class Main {
         }else if (clientOS == 1 && clientDeviceYear == 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }else {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
         // Задача 3
         System.out.println("Задача 3");
+        int year = 2016;
+        if (year % 4 == 0 || year % 400 == 0 ) {
+            System.out.println(year + " год является високосным");
+        }else if (year % 100 != 0) {
+            System.out.println(year + " год не является високосным");
+        }
+
+        // Задача 4
+        System.out.println("Задача 4");
+        // Задача 5
+        System.out.println("Задача 5");
     }
 }
