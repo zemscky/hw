@@ -23,9 +23,9 @@ public class Main {
         // Задача 3
         System.out.println("Задача 3");
         int year = 2021;
-        if (year % 4 == 0 || year % 400 == 0) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
-        } else if (year % 100 != 0) {
+        } else {
             System.out.println(year + " год не является високосным");
         }
         // Задача 4
@@ -49,6 +49,7 @@ public class Main {
         switch (monthNumber) {
             case 1:
             case 2:
+            case 12:
                 System.out.println("Зима");
                 break;
             case 3:
@@ -65,9 +66,6 @@ public class Main {
             case 10:
             case 11:
                 System.out.println("Осень");
-                break;
-            case 12:
-                System.out.println("Зима");
                 break;
             default:
                 System.out.println("Такого месяца не существует");
